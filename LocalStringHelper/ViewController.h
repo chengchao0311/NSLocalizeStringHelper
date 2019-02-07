@@ -8,8 +8,12 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface ViewController : NSViewController
+@interface ViewController : NSViewController<NSControlTextEditingDelegate>
 
+@property (weak) IBOutlet NSTextField *keyFeild;
+@property (weak) IBOutlet NSTextField *valueField;
+@property (weak) IBOutlet NSTextField *resultField;
+@property(nonatomic, strong) NSArray * fileArray;
 
 @end
 
